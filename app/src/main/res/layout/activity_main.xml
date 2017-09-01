@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.administrateur.webservicedemo.MainActivity"
+    tools:layout_gravity="top|center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/txtCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp" />
+
+    <Button
+        android:onClick="parCode"
+        android:text="code"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/button2" />
+
+    <Button android:text="all"
+            android:onClick="parTous"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button" />
+
+    <!-- 2eme ligne -->
+    <TextView android:text="Code du pays"
+
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/txtCode"
+        android:layout_alignBottom="@+id/txtCode"
+        android:layout_toRightOf="@+id/txtResult"
+        android:layout_toEndOf="@+id/txtResult"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="pays ..."
+        android:layout_below="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp" />
+
+    <ListView
+
+        android:id="@+id/lstResult"
+        android:layout_height="415dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="fill"
+        android:text=""
+        android:layout_toRightOf="@+id/txtResult"
+        android:layout_toEndOf="@+id/txtResult"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
